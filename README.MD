@@ -3,6 +3,7 @@
 This project uses the Twitter API and the [VADER](https://github.com/cjhutto/vaderSentiment) Sentiment Analysis tool. VADER is a natural language processing library primarily used to analyze social media sentiment.
 
 This project generates a positive and negative sentiment score for the top 20 players at TE, WR, QB, RB. It does this by searching for non-truncated tweets from a list of Fantasy Football analysts listed in `config.py` in the `Config` class. Feel free to adjust this list of analysts.
+The project then downloads this data to a csv file located in the `data` directory under the file name `sentiment.csv`
 
 To use this project, you need to create a `.env` file with the following environment variables:
 1. TWITTER_API_KEY
